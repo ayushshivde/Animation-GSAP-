@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html , body{
+width:100%;
+height: 100%;
+font-family: 'Roslindale Display Condensed';
+background: #000;
+overflow-x: hidden;
+}
+        body::-webkit-scrollbar {
+            display: none;
+        }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper-404 h1 {
+width: 100%;
+color: #fff;
+font-size: 40vw;
+font-weight: 400;
+text-align: center;
+margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 1200vh;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-404{
+    position: absolute;
+    top:0;
+    width:400vw;
+    height: 100vh;
+    will-change: transform;
+}
+
+.card{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* border-radius: 20px; */
+               border: 15px solid #ffffff0f;
+
+    backdrop-filter: blur(10px)
+   
+}
+
+#card-1{
+    top:50%;
+    left:20%
+}
+
+#card-2{
+    top:25%;
+    left:40%
+}
+#card-3{
+    top:45%;
+    left:60%
+}
+#card-4{
+    top:15%;
+    left:80%
+}
+
+
+
+
+@media(max-width:900px){
+    .wrapper-404{
+        padding-top: 20em;
+    }
+}

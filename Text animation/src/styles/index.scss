@@ -1,0 +1,209 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  font-family:  "Lay Grotesk";
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  line-height: 1;
+  
+}
+
+span{
+  color: black;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding : 1.5rem 2em;
+
+  justify-content: space-between;
+ .col1{
+   display: flex;
+  justify-content: space-between;
+width: 30%;
+  }
+
+
+   nav .col2{
+text-align: right;
+background-color: aqua;
+
+  }
+}
+
+
+nav span{
+  color: #909090;
+  mix-blend-mode: difference;
+}
+
+.col .sub-col{
+  flex : 1
+}
+
+section{
+  position: relative;
+  width:  100vw;
+  height: 100vh;
+  padding: 2em;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .header{
+    width: 50%;
+    text-align: center;
+    h1{
+      color: #909090  
+    }
+  }
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h1{
+    text-indent: 25%;
+  }
+}
+
+.line{
+  transform: translateY(100%);
+  will-change: transform;
+  padding-bottom: 0.4rem;
+}
+
+.about-img{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: max-content;
+  padding: 8em 2em;
+
+  img{
+    width: 20%;
+    aspect-ratio: 4/5;
+  }
+}
+
+
+
+.philosophy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #202020;
+
+  h1{
+color: #fff;
+text-indent: 25%;
+  }
+
+  span{
+    color: #fff;
+  }
+
+
+}
+
+
+.story{
+height: max-content;
+display: flex;
+gap:1em;
+margin-bottom: 8em;
+
+
+.col1{
+  width: 50%;
+  display: flex;
+
+  justify-content: space-around;
+
+  gap:1.5em;
+
+}
+.col2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  font-weight: 500;
+  p{
+    line-height: 1.2;
+  }
+
+}
+
+
+}
+footer{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+gap:1em;
+padding: 6em 2em 1.5em 2em;
+
+.col{
+  display: flex;
+  justify-content: flex-end;
+}
+.social{
+  display: flex;
+justify-content: center;
+margin-left: 5em;
+}
+
+.sub-col{
+  display: flex;
+  align-items: flex-end;
+
+}
+}
